@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      
+      *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .userform {
+
+        /* border: 2px solid black; */
+        width: 40%;
+        margin:auto;
+        padding:15px;
+        box-shadow: 0px 0px 8px rgb(187, 186, 186);
+        margin-top: 30px;
+        border-radius: 8px;
+      }
+
+      form{
+
+         margin: 20px 0px;
+      }
+
+      input{
+
+        width: 100%;
+        margin: 8px 0px;
+        padding: 8px;
+        border-radius: 3px;
+        border: none;
+        border: 1px solid gray;
+        outline: none;
+      }
+
+
+      #btn{
+
+        background-color: rgb(51, 51, 253);
+        color: white;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+      }
+
+
+      h1{
+        text-align: center;
+        font-weight: 300;
+        border-bottom: 1px solid gray;
+        padding: 5px;
+        font-size: 25px;
+      }
+
+      #btn:hover{
+
+        background-color: blue;
+        cursor: pointer;
+      }
+
+      label{
+
+        font-size:12px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="userform">
+        <h1>Signup Form</h1>
+      <form action="">
+        <div class="username">
+          <label for="">Username</label>
+          <input type="text" placeholder="Enter Your Name" />
+        </div>
+        <div class="email">
+          <label for="">Email</label>
+          <input type="email" placeholder="Enter Your Email" />
+        </div>
+        <div class="phone-no">
+          <label for="">Phone No</label>
+          <input type="number" placeholder="Enter Your Phone no" />
+        </div>
+        <div class="password">
+          <label for="">Password</label>
+          <input type="password" placeholder="Enter Your Password" />
+        </div>
+        <div class="button">
+           <input type="submit" id="btn">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

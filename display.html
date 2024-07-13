@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Properties</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        background-color: pink;
+        display: inline-block;
+    }
+    
+    .parent{
+          margin-left: 500px;
+          margin-top: 300px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Display 
+
+    1 block 
+    2 inline 
+    3 inline-block 
+    -->
+    <div class="parent">
+      <div class="box">This is box this is box</div>
+      <div class="box">This is box this is box</div>
+      <div class="box">This is box this is box</div>
+      <div class="box">This is box this is box</div>
+    </div>
+  </body>
+</html>
