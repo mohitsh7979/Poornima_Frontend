@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body{
+
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+      }
+
+      section{
+
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        height: 60vh;
+        width: 30%;
+        box-shadow: 0px 0px 10px rgb(161, 159, 159);
+        border-radius: 20px;
+        min-width: 400px;
+        min-height: 400px;
+     
+      }
+
+      .upper{
+
+        height: 30%;
+        background-color: rgb(27, 159, 247);
+        border-radius: 20px 20px 0px 0px;
+      
+      }
+
+      .middle{
+
+        background-color: yellow;
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+
+      img{
+        height: 150px;
+        width: 150px;
+        border-radius: 80px;
+        position: absolute;
+        top: -60px;
+      }
+
+      .lower{
+        
+        text-align: center;
+        padding-top: 105px;
+    
+      }
+
+      i{
+
+        font-size: 20px;
+       
+      }
+
+      .button button{
+
+         padding: 15px 50px;
+         border-radius: 50px;
+         background-color: rgb(27, 159, 247);
+         color: white;
+         border: none;
+        
+      }
+
+      i{
+
+        margin: 5px 8px;
+        font-size:25px;
+      }
+
+      .fa-linkedin{
+        color: rgb(12, 61, 107);
+      }
+
+      .fa-facebook{
+
+        color: rgb(27, 159, 247);
+      }
+
+      .content,.icon,.button{
+
+        margin: 10px 0px;
+      }
+
+      
+      
+    
+
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="card">
+        <div class="upper"></div>
+        <div class="middle">
+            <img src="car.jpg" alt="">
+        </div>
+        <div class="lower">
+            <div class="content">
+                <h1>FullStack Developer</h1>
+                <h2>Fresher</h2>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="button">
+                <button>Messages</button>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
