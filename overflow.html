@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      /* .box{
+
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            font-size:30px;
+            background-color: black;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        img:hover{
+            
+            opacity: 0.5;
+            cursor: pointer;
+        } */
+
+      .box {
+        height: 70%;
+        width: 40%;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .item {
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+        position: absolute;
+      }
+
+      .item:nth-child(1) {
+        background-color: yellow;
+        left: 0px;
+        z-index: 999;
+      }
+
+      .item:nth-child(2) {
+        background-color: black;
+        right:0px;
+        z-index: 1;
+      }
+
+      .item:nth-child(3) {
+        background-color: green;
+        top: 0px;
+        z-index: 1000;
+      }
+
+      .item:nth-child(4) {
+        background-color: pink;
+        bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi sapiente dolor tempora. At commodi, quis ratione minus iure nulla molestias illum repudiandae perferendis debitis? Nostrum reprehenderit odio, mollitia doloribus nisi esse distinctio autem ab explicabo in soluta sint neque recusandae aut pariatur est at vel quis non sed dolorem amet eos. Facere libero officiis vero corrupti rerum tempore temporibus, doloremque fuga magni autem mollitia quibusdam distinctio quis architecto illo. Ex perspiciatis quas facilis soluta voluptates, voluptatum veritatis molestiae assumenda repudiandae quos beatae, temporibus aliquam non quibusdam magni numquam magnam. Maiores delectus veniam, obcaecati soluta nihil rem officiis suscipit impedit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor consequuntur qui nesciunt esse maxime inventore. Hic ducimus corporis architecto dolor distinctio voluptatum quia similique. Aspernatur quod expedita illum laboriosam. Ea unde facilis quia provident voluptatibus maiores delectus, officiis harum sint autem in aliquam iste fugiat ipsum voluptates quidem quisquam ab consequatur! Omnis cum deleniti aperiam voluptas vitae ducimus consectetur optio nostrum fuga eum, eligendi nisi voluptates recusandae! Quae enim nemo nobis laudantium dolorum, atque ipsa quasi ratione neque esse ipsam magnam soluta beatae excepturi id alias blanditiis ipsum exercitationem sint doloribus voluptas eius nulla minima. Nulla minus id vitae excepturi.
+    </div>
+     -->
+
+    <!-- <div class="box">
+        <img src="car.jpg" alt="">
+     </div> -->
+
+    <div class="box">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
