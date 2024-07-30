@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        header{
+
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgb(171, 168, 168);
+        }
+
+        .menu{
+
+            display: flex;
+        }
+
+        .menu li{
+
+            list-style: none;
+            margin: 10px 20px;
+            font-size: 28px;
+        }
+
+        .signup button{
+
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 19px;
+        }
+
+        .menu li:hover{
+
+            color: green;
+            cursor: pointer;
+        }
+
+        .bar{
+            display: none;
+            font-size: 30px;
+            color: green;
+        }
+
+        .prod{
+            position: relative;
+
+        }
+
+        .dropdown{
+            position: absolute;
+            margin-top: 25px;
+            visibility: hidden;
+            box-shadow: 0px 0px 10px rgb(162, 161, 161);
+            transition: all 400ms linear;
+            opacity: 0;
+        }
+
+        .prod:hover .dropdown{
+
+            visibility: visible; 
+            opacity: 1; 
+        }
+
+        .dropdown ul li{
+
+            margin: 10px 0px;
+            padding: 10px;
+        }
+
+        .dropdown ul li:hover{
+
+            background-color: black;
+            color: white;
+        }
+
+        .sub-dropdown{
+            position: absolute;
+            /* left: 40px; */
+            right: -200px;
+            top: 0px;
+            width: 200px;
+            box-shadow: 0px 0px 10px rgb(168, 166, 166);
+            display: none;
+        }
+
+
+        .sub-dropdown ul li{
+
+            color: black;
+        }
+
+        .sub:hover .sub-dropdown{
+
+            display: block;
+        }
+
+
+        @media (max-width:750px){
+
+            .mid,.right{
+                display: none;
+            }
+
+            .bar{
+                display: block;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+      <div class="left">
+        <h1>Logo</h1>
+      </div>
+      <div class="mid">
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li class="prod">
+               <span>Product</span> 
+               <div class="dropdown">
+                <ul>
+                    <li class="sub">
+                        <span>Mens</span>
+                        <div class="sub-dropdown">
+                            <ul>
+                                <li>Jeans</li>
+                                <li>Shirt</li>
+                                <li>Tshirt</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sub">
+                        <span>Womens</span>
+                        <div class="sub-dropdown">
+                            <ul>
+                               <li>Toper</li>
+                               <li>Jeans</li>
+                               <li>Tshirt</li>
+                               <li>Toper</li>
+                               <li>Jeans</li>
+                               <li>Tshirt</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="sub">
+                        <span>Kids</span>
+                        <div class="sub-dropdown">
+                            <ul>
+                                <li>Jeans</li>
+                                <li>Shirt</li>
+                                <li>Tshirt</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="sub">
+                        <span>Others</span>
+                        <div class="sub-dropdown">
+                            <ul>
+                                <li>Jeans</li>
+                                <li>Shirt</li>
+                                <li>Tshirt</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+               </div>
+            </li>
+            <li>Contact</li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="cart"></div>
+        <div class="signup">
+            <button>Signup</button>
+        </div>
+      </div>
+
+      <div class="bar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    
+</body>
+</html>
